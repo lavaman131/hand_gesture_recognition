@@ -1,4 +1,4 @@
-# 🖖 Hand Gesture Recognition Project
+# 🖖 Hand Gesture Recognition
 
 ## 📚 Problem Definition
 
