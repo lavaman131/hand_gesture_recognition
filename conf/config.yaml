@@ -1,0 +1,29 @@
+hydra:
+  job:
+    name: "demo"
+  run:
+    dir: "./experiments/${hydra.job.name}"
+
+camera:
+  id: 0
+  width: 1920
+  height: 1080
+  roi:
+    width: 640
+    height: 790
+  fps: 30
+  num_frames: 30
+  start_delay_seconds: 5
+
+save:
+  dir: "outputs"
+
+processing:
+  ground_truth_label: -1
+  gamma: 0.375
+  template_matching:
+    templates_base_dir: "./templates/front_face_camera/binary_hands"
+    rotations: [-10.0, 0.0, 10.0]
+    scales: [0.8, 0.9, 1.0]
+    labels_file: "${processing.template_matching.templates_base_dir}/labels.csv"
+    images_dir: "${processing.template_matching.templates_base_dir}"
