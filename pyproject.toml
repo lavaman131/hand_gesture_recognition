@@ -2,7 +2,7 @@
 name = "gesture"
 version = "0.0.1"
 description = "A series of classical computer vision algorithms for sign-language recognition."
-authors = [{ name = "lavaman131", email = "lavaalex3@gmail.com" }]
+authors = [{ name = "Alex Lavaee", email = "lavaalex3@gmail.com" }]
 license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.9"
